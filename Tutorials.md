@@ -1,6 +1,6 @@
-#Bluetooth 5.0_Kinectmouse_Tutorials#
+# Bluetooth 5.0_Kinectmouse_Tutorials
 
-##Part 1 preparation## 
+## Part 1 preparation
 
 We use the WICED  CYW920719Q40EVB-01, it is a Ultra-Low-Power Bluetooth 5.0 board, and our system is  Windows 10. 
 
@@ -26,7 +26,7 @@ HID: Human Interface Device
 
 
 
-##Part 2  Raw Data Control Mouse##
+## Part 2  Raw Data Control Mouse
 
 First, we copy the hci_ble_hid_dev folder to back up, as we will modify the folder directly.  Then open the following link, we would find the HID Descriptor Tool in this website. If you want to develop your own hid device, you would also use this tool to generate the hid description quickly. When you open HID Descriptor Tool, you will see the screen below. Then enter the mouse, as today we are make a kinectmouse. The Report Descriptor showed on the screen is the what we should put into our program.
 
@@ -141,7 +141,7 @@ Then we do some change to the hci_ble_hid_dev_set_advertisement_data function. A
 
 
 
-##Part 3 Make target & Download program##
+## Part 3 Make target & Download program
 
 After you successfully modify your code. You would make target. You click make target and chose new. Then you enter the name of our target: demo.hid.hci_ble_hid_dev-CYW920719Q40EVB_01 download. After that, you could see the target add on the list. Double click, you would see the log in the Console.
 
@@ -322,5 +322,5 @@ Finally, we add "mouse_i2c_initialize();" into the init function, be careful you
 
     mouse_i2c_initialize();
 
-##Part 4 Cursor##
+## Part 4 Cursor
 continuing
